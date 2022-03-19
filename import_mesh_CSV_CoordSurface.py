@@ -28,7 +28,7 @@ from bpy_extras.io_utils import (
 class ImportCSVCoordsSurface(bpy.types.Operator, ImportHelper):
     """Import CSV"""      # Use this as a tooltip for menu items and buttons.
     bl_idname = "import_mesh.csvcoordssurface"        # Unique identifier for buttons and menu items to reference.
-    bl_label = "Import CSV Data Surface (UV -> XYZ Coordinates)"         # Display name in the interface.
+    bl_label = "Import CSV Data Surface (UV -> XYZ Coordinates) (.csv)"         # Display name in the interface.
     bl_options = {'REGISTER', 'UNDO'}  # Enable undo for the operator.
 
     filepath: StringProperty(
